@@ -11,7 +11,8 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // const key = "feb210bb46msh61ab2b263b5bacap1ee6ffjsn574f04514ee3";
-const key = "bbabb397e6msh7c46733f774de85p189212jsnae908d7bdc37";
+//const key = "bbabb397e6msh7c46733f774de85p189212jsnae908d7bdc37";
+const key = "f6633af98bmsh3ca9921373a33d2p18563cjsn18ccc2e427a5"
 const host = "youtube-search-results.p.rapidapi.com";
 
 let mydata = [];
