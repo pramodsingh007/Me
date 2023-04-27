@@ -94,4 +94,20 @@ app.get("/result",(req,res)=>{
   })
 })
 
+app.get("/result/:query",(req,res)=>{
+  mydata = []
+  const q = req.params.query
+  fechData(q)
+  let waitForSec = new Promise((resolve,reject)=>{
+    setTimeout(resolve,3000)
+  })
+  waitForSec.then(()=>{
+   
+    
+    res.render('index.ejs',{results:mydata})
+  })
+})
+
+
+
 app.listen(4000);
