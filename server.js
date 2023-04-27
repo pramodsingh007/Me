@@ -78,7 +78,7 @@ app.get("/", (req, res) => {
 
 app.post("/", (req, res) => {
   mydata = [];
-  const query = req.body.searchbar.replaceAll(" ", "+");
+  const query = req.body.searchbar.replace(" ", "+");
     fechData(query)
     res.redirect("/result");;
 });
